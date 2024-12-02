@@ -53,7 +53,7 @@ const Navbar = () => {
                 <h2 className="text-4xl text-center md:text-5xl font-bold mb-4">Upgrade Your Tech Accessorize with <br /> Gadget Heaven Accessories</h2>
                 <p className="text-lg text-center md:text-xl mb-8">Explore the latest gadgets that will take your experience to <br /> the next level. From smart devices to the coolest accessories, we have it all!</p>
                 <div className="flex justify-center">
-                    <button className="btn btn-active btn-secondary my-2">Shop Now</button>
+                    <button className="btn btn-active btn-secondary my-2 bg-slate-300 text-purple-600 text-lg border-none">Shop Now</button>
                 </div>
             </div>
             <div className="absolute border border-white rounded-lg p-2 bottom-90px left-1/2 transform -translate-x-1/2">
