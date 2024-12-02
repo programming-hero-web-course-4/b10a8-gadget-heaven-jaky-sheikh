@@ -1,0 +1,130 @@
+[
+    {
+        "id": 1,
+        "category": "Laptop",
+        "name": "MacBook Pro 14",
+        "price": 2199,
+        "imageURL": "https://i.ibb.co.com/3vkSXF1/kari-shea-1-SAnr-Ixw5-OY-unsplash.jpg",
+        "details": "View Details"
+    },
+    {
+        "id": 2,
+        "category": "Laptop",
+        "name": "Dell XPS 15",
+        "price": 1899,
+        "imageURL": "https://i.ibb.co.com/3FXjsf0/alex-knight-j4uu-Kn-N43-M-unsplash.jpg",
+        "details": "View Details"
+    },
+    {
+        "id": 3,
+        "category": "Laptop",
+        "name": "HP Spectre x360",
+        "price": 1599,
+        "imageURL": "https://i.ibb.co.com/s9YqQz4/anete-lusina-zws-Hjak-E-i-I-unsplash.jpg",
+        "details": "View Details"
+    },
+    {
+        "id": 4,
+        "category": "Laptop",
+        "name": "Apple",
+        "price": 1999,
+        "imageURL": "https://i.ibb.co.com/tcthKqd/maxim-hopman-Hin-rzh-Od-Ws-unsplash.jpg",
+        "details": "View Details"
+    },
+    {
+        "id": 5,
+        "category": "Laptop",
+        "name": "Asus ROG Zephyrus",
+        "price": 2499,
+        "imageURL": "https://i.ibb.co.com/V9r8pyT/dell-8pb7-Hq539-Zw-unsplash.jpg",
+        "details": "View Details"
+    },
+    {
+        "id": 6,
+        "category": "Laptop",
+        "name": "Acer Swift 3",
+        "price": 1299,
+        "imageURL": "https://i.ibb.co.com/R3kz1dJ/lauren-mancke-a-OC7-TSLb1o8-unsplash.jpg",
+        "details": "View Details"
+    },
+    {
+        "id": 7,
+        "category": "Laptop",
+        "name": "Microsoft Surface Laptop",
+        "price": 1799,
+        "imageURL": "https://i.ibb.co.com/Zh31tv4/carlos-muza-hpj-Sk-U2-UYSU-unsplash.jpg",
+        "details": "View Details"
+    },
+    {
+        "id": 8,
+        "category": "Laptop",
+        "name": "Razer Blade 14",
+        "price": 2699,
+        "imageURL": "https://i.ibb.co.com/C2ZDqCY/ben-kolde-t9-Dooibg-MEk-unsplash.jpg",
+        "details": "View Details"
+    },
+    {
+        "id": 9,
+        "category": "Mobile",
+        "name": "iPhone 14 Pro",
+        "price": 999,
+        "imageURL": "https://i.ibb.co.com/NYdrXk7/rahul-chakraborty-xs-Gxht-Asf-SA-unsplash.jpg",
+        "details": "View Details"
+    },
+    {
+        "id": 10,
+        "category": "Mobile",
+        "name": "Samsung Galaxy S23",
+        "price": 799,
+        "imageURL": "https://i.ibb.co.com/0ZL7DLx/coinview-app-h7a6g0ua6-LM-unsplash.jpg",
+        "details": "View Details"
+    },
+    {
+        "id": 11,
+        "category": "Mobile",
+        "name": "Google Pixel 7",
+        "price": 599,
+        "imageURL": "https://i.ibb.co.com/GsmYvGX/ben-kolde-cp-Ls-Wm-MEa1-Q-unsplash.jpg",
+        "details": "View Details"
+    },
+    {
+        "id": 12,
+        "category": "Mobile",
+        "name": "OnePlus 11",
+        "price": 699,
+        "imageURL": "https://i.ibb.co.com/nzBQbfC/william-hook-9e9-PD9bl-Ato-unsplash.jpg",
+        "details": "View Details"
+    },
+    {
+        "id": 13,
+        "category": "Accessory",
+        "name": "Wireless Mouse",
+        "price": 50,
+        "imageURL": "https://i.ibb.co.com/sWz0fgD/rezwan-ahmed-CXzn-HE1p-Kx-E-unsplash.jpg",
+        "details": "View Details"
+    },
+    {
+        "id": 14,
+        "category": "Accessory",
+        "name": "Mechanical Keyboard",
+        "price": 99,
+        "imageURL": "https://i.ibb.co.com/yX6rCBH/michelle-ding-c7y-Bhz9-XTIs-unsplash.jpg",
+        "details": "View Details"
+    },
+    {
+        "id": 15,
+        "category": "Accessory",
+        "name": "Noise Cancelling Headphones",
+        "price": 199,
+        "imageURL": "https://i.ibb.co.com/q5wBpRC/pedro-sanz-Al8uux-ZCz-Mo-unsplash.jpg",
+        "details": "View Details"
+    },
+    {
+        "id": 16,
+        "category": "Accessory",
+        "name": "USB-C Hub",
+        "price": 55,
+        "imageURL": "https://i.ibb.co.com/BZGR74w/lasse-jensen-l-Cq0-Tfl9-n-I-unsplash.jpg",
+        "details": "View Details"
+    }
+]
