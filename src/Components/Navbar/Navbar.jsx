@@ -2,8 +2,16 @@ import { IoCartOutline } from "react-icons/io5";
 import { GiSelfLove } from "react-icons/gi";
 
 const Navbar = () => {
+
+    const links = <>
+        <li><a>Home</a></li>
+        <li><a>Static</a></li>
+        <li><a>Dashboard</a></li>
+        <li><a>Latest Items</a></li>
+    </>
+
     return (
-        <div className="relative bg-purple-600 text-white py-8 px-2">
+        <div className="relative bg-purple-600 text-white pb-72 px-2">
             <div className="navbar bg-purple-600">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -23,21 +31,15 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Home</a></li>
-                            <li><a>Static</a></li>
-                            <li><a>Dashboard</a></li>
-                            <li><a>Latest Items</a></li>
+                            className="menu menu-sm dropdown-content bg-purple-500 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            {links}
                         </ul>
                     </div>
                     <a className="btn btn-ghost text-xl">Gadget Heaven</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
-                        <li><a>Static</a></li>
-                        <li><a>Dashboard</a></li>
-                        <li><a>Latest Items</a></li>
+                        {links}
                     </ul>
                 </div>
                 <div className="navbar-end gap-4">
@@ -60,7 +62,7 @@ const Navbar = () => {
                 <img
                     src="/public/assets/banner.jpg"
                     alt="Tech Accessory"
-                    className="rounded-lg shadow-lg w-[1400px] h-[500px] object-cover"
+                    className="rounded-lg shadow-lg w-[1400px] h-[400px] object-cover"
                 />
             </div>
         </div>
