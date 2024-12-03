@@ -16,16 +16,16 @@ const Home = () => {
         <div className="mt-48">
             <h2 className="text-3xl font-bold text-center mb-6">Explore Cutting-Edge Gadgets</h2>
             <div className="flex">
-                <div className="w-1/4 p-4 bg-gray-200 border-none rounded-lg mt-4 mb-auto">
-                    <ul>
-                        <li className="mb-6"><button className="btn btn-outline btn-primary w-full">All Products</button></li>
-                        <li className="mb-6"><button className="btn btn-outline btn-primary w-full">Laptops</button></li>
-                        <li className="mb-6"><button className="btn btn-outline btn-primary w-full">Phones</button></li>
-                        <li className="mb-6"><button className="btn btn-outline btn-primary w-full">Accessories</button></li>
-                        <li className="mb-6"><button className="btn btn-outline btn-primary w-full">Smart Watches</button></li>
-                        <li className="mb-6"><button className="btn btn-outline btn-primary w-full">MacBook</button></li>
-                        <li><button className="btn btn-outline btn-primary w-full">IPhone</button></li>
-                    </ul>
+                <div className="w-1/4 text-center p-4 bg-gray-100 border-none rounded-lg mt-4 mb-auto list-none">
+
+                    <li className="mb-6"><button className="btn btn-outline btn-primary w-1/2">All Products</button></li>
+                    <li className="mb-6"><button className="btn btn-outline btn-primary w-1/2">Laptops</button></li>
+                    <li className="mb-6"><button className="btn btn-outline btn-primary w-1/2">Phones</button></li>
+                    <li className="mb-6"><button className="btn btn-outline btn-primary w-1/2">Accessories</button></li>
+                    <li className="mb-6"><button className="btn btn-outline btn-primary w-1/2">Smart Watches</button></li>
+                    <li className="mb-6"><button className="btn btn-outline btn-primary w-1/2">MacBook</button></li>
+                    <li><button className="btn btn-outline btn-primary w-1/2">IPhone</button></li>
+
                 </div>
                 <div className="w-3/4 grid sm:grid-cols-4 gap-5 p-4">
                     {data.map((item) => (
