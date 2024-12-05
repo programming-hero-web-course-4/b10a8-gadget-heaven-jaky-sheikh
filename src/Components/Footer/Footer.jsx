@@ -6,7 +6,7 @@ const Footer = () => {
             <footer className="footer bg-slate-200 text-black p-10 flex flex-col items-center">
                 <div className="text-center">
                     <h2 className="text-3xl font-bold">Gadget Heaven</h2>
-                    <p className="font-medium">Leading the way in cutting-edge technology and innovation.</p>
+                    <p className="font-medium">Leading the way in cutting-edge <br /> technology and innovation.</p>
                 </div>
                 <div className="flex justify-evenly w-full">
                     <nav>

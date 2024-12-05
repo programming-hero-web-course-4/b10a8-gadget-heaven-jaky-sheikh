@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 
 const Home = () => {
 
@@ -57,7 +57,9 @@ const Home = () => {
                                 <img src={item.imageURL} alt={item.name} className="w-full h-80 object-cover mb-4" />
                                 <h3 className="text-2xl font-semibold">{item.name}</h3>
                                 <p>Price:${item.price}</p>
-                                <button className="btn btn-primary mt-4">{item.details}</button>
+                                <button className="btn btn-primary mt-4"><Link to={`/product/${item.id}`} className="text-white">
+                                    View Details
+                                </Link></button>
                             </div>
                         ))
                     ) : (

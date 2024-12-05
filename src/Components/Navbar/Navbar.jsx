@@ -1,13 +1,16 @@
 import { IoCartOutline } from "react-icons/io5";
 import { GiSelfLove } from "react-icons/gi";
+import { useGlobalState } from "../../Context/GlobalState";
 
 const Navbar = () => {
 
+    const { cartCount, wishlistCount } = useGlobalState();
+
     const links = <>
-        <li><a>Home</a></li>
-        <li><a>Static</a></li>
-        <li><a>Dashboard</a></li>
-        <li><a>Latest Items</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/static">Static</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/latest-items">Latest Items</a></li>
     </>
 
     return (
@@ -45,9 +48,11 @@ const Navbar = () => {
                 <div className="navbar-end gap-4">
                     <div className=" flex items-center justify-center w-8 h-8 border-2 rounded-full">
                         <IoCartOutline className="text-2xl" />
+                        {cartCount > 0 && <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">{cartCount}</span>}
                     </div>
                     <div className=" flex items-center justify-center w-8 h-8 border-2 rounded-full">
                         <GiSelfLove className="text-xl" />
+                        {wishlistCount > 0 && <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">{wishlistCount}</span>}
                     </div>
                 </div>
             </div>

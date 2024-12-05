@@ -2,17 +2,26 @@ import './App.css'
 import Home from './Components/Home/Home'
 import Navbar from './Components/Navbar/Navbar'
 import Footer from './Components/Footer/Footer'
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ProductDetails from './Components/ProductDetails/ProductDetails';
+import { GlobalStateProvider } from './Context/GlobalState';
 
 function App() {
 
 
   return (
     <>
-      <Navbar></Navbar>
-      {/* <h1>Vite + React</h1> */}
-      <Home></Home>
-      <Footer></Footer>
+      <GlobalStateProvider>
+        <Router>
+          <Navbar></Navbar>
+          {/* <h1>Vite + React</h1> */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/product/:id" element={<ProductDetails />} />
+          </Routes>
+          <Footer></Footer>
+        </Router>
+      </GlobalStateProvider>
     </>
   )
 }
