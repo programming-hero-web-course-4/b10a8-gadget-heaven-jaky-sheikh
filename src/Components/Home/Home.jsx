@@ -31,7 +31,7 @@ const Home = () => {
         <div className="mt-48">
             <h2 className="text-3xl font-bold text-center mb-6">Explore Cutting-Edge Gadgets</h2>
             <div className="flex">
-                <div className="w-1/4 text-center p-4 bg-gray-100 border-none rounded-lg mt-4 mb-auto list-none">
+                <div className="w-1/4 text-center p-4 bg-gray-100 border-none rounded-lg mt-4 mb-auto ml-4 list-none">
 
                     <li className="mb-6"><button
                         onClick={() => handleCategoryChange("All Products")} className="btn btn-outline btn-primary w-1/2">All Products</button></li>
@@ -50,7 +50,7 @@ const Home = () => {
                         onClick={() => handleCategoryChange("IPhone")} className="btn btn-outline btn-primary w-1/2">IPhone</button></li>
 
                 </div>
-                <div className="w-3/4 grid sm:grid-cols-4 gap-5 p-4">
+                <div className="w-3/4 grid grid-cols-2 lg:grid-cols-4 gap-5 p-4">
                     {filteredData.length > 0 ? (
                         filteredData.map((item) => (
                             <div key={item.id} className="p-4 border rounded-lg shadow-md">

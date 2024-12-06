@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { GiSelfLove } from "react-icons/gi";
+import { useGlobalState } from '../../Context/GlobalState';
 
 const ProductDetails = () => {
 
     const { id } = useParams();
     const [product, setProduct] = useState(null);
+    const { addToCart, addToWishlist } = useGlobalState();
 
     useEffect(() => {
         fetch("/laptop.json")
@@ -36,7 +38,8 @@ const ProductDetails = () => {
             <p className="text-lg mb-4">Category: {product.category}</p>
             <p className="text-lg mb-4">{product.description || "No description available."}</p>
             <div className='flex justify-center items-center gap-4'>
-                <button className="btn btn-primary">Add to cart <IoCartOutline /></button> <GiSelfLove className='w-8 h-8 border-2 rounded-full' />
+                <button className="btn btn-primary" onClick={addToCart}>Add to cart <IoCartOutline /></button>
+                <button className="btn btn-secondary" onClick={addToWishlist}><GiSelfLove className='w-6 h-6' /></button>
             </div>
         </div>
     );

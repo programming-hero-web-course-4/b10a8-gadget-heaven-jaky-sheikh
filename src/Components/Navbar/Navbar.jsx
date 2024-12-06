@@ -4,7 +4,7 @@ import { useGlobalState } from "../../Context/GlobalState";
 
 const Navbar = () => {
 
-    const { cartCount, wishlistCount } = useGlobalState();
+    const { cartCount, likeCount } = useGlobalState();
 
     const links = <>
         <li><a href="/">Home</a></li>
@@ -46,13 +46,17 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-4">
-                    <div className=" flex items-center justify-center w-8 h-8 border-2 rounded-full">
+                    <div className="flex items-center justify-center w-8 h-8 border-2 rounded-full bg-white text-purple-600 relative">
                         <IoCartOutline className="text-2xl" />
-                        {cartCount > 0 && <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">{cartCount}</span>}
+                        {cartCount > 0 && (
+                            <span className="absolute top-0 right-0 text-xs text-white bg-red-500 rounded-full w-4 h-4 flex items-center justify-center">{cartCount}</span>
+                        )}
                     </div>
-                    <div className=" flex items-center justify-center w-8 h-8 border-2 rounded-full">
+                    <div className="flex items-center justify-center w-8 h-8 border-2 rounded-full bg-white text-purple-600 relative">
                         <GiSelfLove className="text-xl" />
-                        {wishlistCount > 0 && <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">{wishlistCount}</span>}
+                        {likeCount > 0 && (
+                            <span className="absolute top-0 right-0 text-xs text-white bg-red-500 rounded-full w-4 h-4 flex items-center justify-center">{likeCount}</span>
+                        )}
                     </div>
                 </div>
             </div>
