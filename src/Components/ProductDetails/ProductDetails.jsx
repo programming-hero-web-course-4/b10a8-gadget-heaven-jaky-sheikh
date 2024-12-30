@@ -38,8 +38,8 @@ const ProductDetails = () => {
             <p className="text-lg mb-4">Category: {product.category}</p>
             <p className="text-lg mb-4">{product.description || "No description available."}</p>
             <div className='flex justify-center items-center gap-4'>
-                <button className="btn btn-primary" onClick={addToCart}>Add to cart <IoCartOutline /></button>
-                <button className="btn btn-secondary" onClick={addToWishlist}><GiSelfLove className='w-6 h-6' /></button>
+                <button className="btn btn-primary" onClick={() => addToCart(product)}>Add to cart <IoCartOutline /></button>
+                <button className="btn btn-secondary" onClick={() => addToWishlist(product)}><GiSelfLove className='w-6 h-6' /></button>
             </div>
         </div>
     );

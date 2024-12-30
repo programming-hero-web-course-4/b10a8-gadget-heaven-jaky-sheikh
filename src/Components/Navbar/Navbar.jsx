@@ -1,15 +1,16 @@
 import { IoCartOutline } from "react-icons/io5";
 import { GiSelfLove } from "react-icons/gi";
 import { useGlobalState } from "../../Context/GlobalState";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
     const { cartCount, likeCount } = useGlobalState();
 
     const links = <>
-        <li><a href="/">Home</a></li>
+        <li><Link to="/">Home</Link></li>
         <li><a href="/static">Static</a></li>
-        <li><a href="/dashboard">Dashboard</a></li>
+        <li><Link to="/dashboard">Dashboard</Link></li>
         <li><a href="/latest-items">Latest Items</a></li>
     </>
 

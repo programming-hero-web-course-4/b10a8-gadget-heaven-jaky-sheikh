@@ -5,6 +5,7 @@ import Footer from './Components/Footer/Footer'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProductDetails from './Components/ProductDetails/ProductDetails';
 import { GlobalStateProvider } from './Context/GlobalState';
+import Dashboard from './Components/Dashboard/Dashboard';
 
 function App() {
 
@@ -17,7 +18,9 @@ function App() {
           {/* <h1>Vite + React</h1> */}
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/product/:id" element={<ProductDetails />} />
+
           </Routes>
           <Footer></Footer>
         </Router>
