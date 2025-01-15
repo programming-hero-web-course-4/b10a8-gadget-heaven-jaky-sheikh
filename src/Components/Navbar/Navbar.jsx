@@ -70,7 +70,7 @@ const Navbar = () => {
             </div>
             <div className="absolute border border-white rounded-lg p-2 bottom-90px left-1/2 transform -translate-x-1/2">
                 <img
-                    src="/public/assets/banner.jpg"
+                    src="/assets/banner.jpg"
                     alt="Tech Accessory"
                     className="rounded-lg shadow-lg w-[1400px] h-[400px] object-cover"
                 />
