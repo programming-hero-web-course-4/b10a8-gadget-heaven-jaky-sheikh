@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Samsung Galaxy S23",
+        "category": "mobile",
+        "price": 999,
+        "imageUrl": "https://i.ibb.co.com/grrpyMR/onur-binay-ZRAZh-Dk5za-E-unsplash.jpg",
+        "details": "A high-performance smartphone with a stunning display and advanced camera features."
+    },
+    {
+        "id": 2,
+        "name": "iPhone 14 Pro",
+        "category": "mobile",
+        "price": 1199,
+        "imageUrl": "https://i.ibb.co.com/L1TwSGL/apple-iphone-14-pro-max-1.jpg",
+        "details": "The latest iPhone with ProMotion technology and an exceptional camera system."
+    },
+    {
+        "id": 3,
+        "name": "Dell XPS 15",
+        "category": "laptop",
+        "price": 1999,
+        "imageUrl": "https://i.ibb.co.com/df3nRgN/pragyan-goswami-Gzi-KHv-3l-Vc-unsplash.jpg",
+        "details": "A premium laptop with a sleek design, 4K display, and powerful performance."
+    }
+]

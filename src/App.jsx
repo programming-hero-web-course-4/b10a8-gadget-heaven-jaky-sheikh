@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProductDetails from './Components/ProductDetails/ProductDetails';
 import { GlobalStateProvider } from './Context/GlobalState';
 import Dashboard from './Components/Dashboard/Dashboard';
+import LatestItems from './Components/LatestItems/LatestItems';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/product/:id" element={<ProductDetails />} />
+            <Route path="/latestItems" element={<LatestItems />} />
 
           </Routes>
           <Footer></Footer>
