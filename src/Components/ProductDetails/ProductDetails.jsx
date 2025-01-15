@@ -4,6 +4,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { GiSelfLove } from "react-icons/gi";
 import { useGlobalState } from '../../Context/GlobalState';
 
+
 const ProductDetails = () => {
 
     const { id } = useParams();
@@ -41,6 +42,7 @@ const ProductDetails = () => {
                 <button className="btn btn-primary" onClick={() => addToCart(product)}>Add to cart <IoCartOutline /></button>
                 <button className="btn btn-secondary" onClick={() => addToWishlist(product)}><GiSelfLove className='w-6 h-6' /></button>
             </div>
+
         </div>
     );
 };
