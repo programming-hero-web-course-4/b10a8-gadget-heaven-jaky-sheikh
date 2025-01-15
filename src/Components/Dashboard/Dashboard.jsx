@@ -1,5 +1,6 @@
 import React from 'react';
 import { useGlobalState } from '../../Context/GlobalState';
+import { Helmet } from 'react-helmet-async';
 
 const Dashboard = () => {
     const { cart } = useGlobalState();
@@ -8,6 +9,9 @@ const Dashboard = () => {
 
     return (
         <div className="p-6 mt-20">
+            <Helmet>
+                <title>Dashboard | Gadget Heaven</title>
+            </Helmet>
             <h2 className="text-3xl font-bold mb-6">Your Cart</h2>
             {sortedCart.length === 0 ? (
                 <p className="text-xl text-gray-500">Your cart is empty!</p>

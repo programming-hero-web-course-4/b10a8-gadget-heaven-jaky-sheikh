@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -29,6 +30,9 @@ const Home = () => {
 
     return (
         <div className="mt-48">
+            <Helmet>
+                <title>Home | Gadget Heaven</title>
+            </Helmet>
             <h2 className="text-3xl font-bold text-center mb-6">Explore Cutting-Edge Gadgets</h2>
             <div className="flex">
                 <div className="w-1/4 text-center p-4 bg-gray-100 border-none rounded-lg mt-4 mb-auto ml-4 list-none">

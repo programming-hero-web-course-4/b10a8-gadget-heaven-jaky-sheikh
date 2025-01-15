@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 
 const LatestItems = () => {
@@ -16,6 +17,9 @@ const LatestItems = () => {
     return (
 
         <div className="p-4">
+            <Helmet>
+                <title>LatestItems | Gadget Heaven</title>
+            </Helmet>
             <h1 className="text-2xl font-bold py-20">Latest Pictures</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {pictures.map(picture => (
