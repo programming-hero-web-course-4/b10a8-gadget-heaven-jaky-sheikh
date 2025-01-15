@@ -7,6 +7,7 @@ import ProductDetails from './Components/ProductDetails/ProductDetails';
 import { GlobalStateProvider } from './Context/GlobalState';
 import Dashboard from './Components/Dashboard/Dashboard';
 import LatestItems from './Components/LatestItems/LatestItems';
+import Static from './Components/Static/Static';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           {/* <h1>Vite + React</h1> */}
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/static" element={<Static />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/product/:id" element={<ProductDetails />} />
             <Route path="/latestItems" element={<LatestItems />} />
