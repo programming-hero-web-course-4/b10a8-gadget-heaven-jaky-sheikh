@@ -12,7 +12,10 @@ const Dashboard = () => {
             <Helmet>
                 <title>Dashboard | Gadget Heaven</title>
             </Helmet>
-            <h2 className="text-3xl font-bold mb-6">Your Cart</h2>
+            <div className='flex justify-between'>
+                <h2 className="text-3xl font-bold mb-6">Your Cart</h2>
+                <button className="btn btn-accent">Purchase</button>
+            </div>
             {sortedCart.length === 0 ? (
                 <p className="text-xl text-gray-500">Your cart is empty!</p>
             ) : (

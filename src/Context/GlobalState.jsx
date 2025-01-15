@@ -5,7 +5,7 @@ const GlobalStateContext = createContext();
 export const GlobalStateProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
     const [likeCount, setLikeCount] = useState(0);
-    console.log(cart);
+    // console.log(cart);
     // const addToCart = () => {
     //     setCartCount((prev) => prev + 1);
     // };
